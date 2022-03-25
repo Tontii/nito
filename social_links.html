@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Сертификатууд</h1>
+      <p>
+        Ур чадвараа дээшлүүлж сурсан курс сертификат байвал оруулаарай. Жишээ
+        нь: aws certifications, хэлний оноо гэх мэт
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main id="socialLinks">
+      <!-- Хадгалсан / Оруулсан линкүүд -->
+      <section id="socialLinkList">
+        <article>
+          <h2>Linkedin</h2>
+          <a href="https://linkedin.com/in/somelink"
+            >https://linkedin.com/in/somelink</a
+          >
+        </article>
+        <button type="button" class="greyButton">
+          <span><i class="fa-solid fa-pen"></i></span>
+        </button>
+      </section>
+
+      <!-- Social link нэмэх товч -->
+      <div class="buttonSecondary">
+        <button type="button">
+          <span><i class="fa-solid fa-circle-plus"></i></span>
+          Нэмэх
+        </button>
+      </div>
+
+      <!-- Social link нэмэх / мэдээлэл оруулах -->
+
+      <div id="socialLinkInput" class="selectionWrapper">
+        <section>
+          <label for="linkType">Төрөл</label>
+          <select id="linkType" name="linkType">
+            <option value="" disabled selected>Cонгох</option>
+            <option value="Portfolio">Portfolio</option>
+            <option value="Linkedin">Linkedin</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Website">Website</option>
+            <option value="Git">Git</option>
+            <option value="OtherLink">Other Link</option>
+          </select>
+        </section>
+        <section>
+          <p>Линк</p>
+          <input
+            id="socialLinkURL"
+            type="text"
+            placeholder="URL Paste хийнэ"
+            value="https://"
+          />
+        </section>
+
+        <!-- Хадгалах товч -->
+        <button type="button" class="saveButton primaryButton">
+          <i class="fa-solid fa-check"
+            ><span class="saveButtonText">Хадгалах</span></i
+          >
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./certificate.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./cv.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Үндсэн мэдээлэл</h1>
+      <p>Өөрийгөө товч танилцуулаарай.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main id="basics">
+      <div class="avatar">
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <!-- Personal Information Input Section -->
+      <div class="shortInputWrapper">
+        <section class="shortInput">
+          <p>Нэр</p>
+          <input type="text" placeholder="Michael" />
+        </section>
+        <section class="shortInput">
+          <p>Овог</p>
+          <input type="text" placeholder="Jackson" />
+        </section>
+      </div>
+      <div class="shortInputWrapper">
+        <section class="shortInput">
+          <p>Имэйл</p>
+          <input type="text" placeholder="MichaelJackson@gmail.com" />
+        </section>
+        <section class="shortInput">
+          <p>Утасны дугаар</p>
+          <input type="text" placeholder="99887766" />
+        </section>
+      </div>
+
+      <!-- More personal information in text area -->
+      <section class="textAreaInput">
+        <p>Миний тухай</p>
+        <textarea
+          name="More personal information"
+          id="morePersonalInfo"
+          cols="50"
+          rows="20"
+        >
+Internship, Software / Hardware  - чиглэлээр ажиллах сонирхолтой ба 1,000,000₮ цалин хүлээж байгаа.</textarea
+        >
+      </section>
+
+      <!-- Footer  -->
+      <footer>
+        <button type="button" class="disabledButton">
+          <a href="javascript:function() { return false;}">Өмнөх</a>
+        </button>
+        <div class="footerButtonWrapper">
+          <button type="button" class="greyButton">
+            <a href="./cv.html">Хадгалаад гарах</a>
+          </button>
+          <button type="button" class="primaryButton">
+            <a href="./experience.html">Дараах</a>
+          </button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

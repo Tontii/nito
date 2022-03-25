@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Чадвар</h1>
+      <p>
+        Хамгийн сайн чаддаг soft skill, гадаад хэл, programming language,
+        framework, tool, болон soft-skill оруулна. 10 орчим байлгахыг
+        хичээгээрэй.
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- Нэмэх дарсан үед доорхи хэсэг гарч ирнэ -->
+      <input
+        type="text"
+        id="skillsInupt"
+        placeholder="e.g English, JQuery, Javascript, Python, React, etc."
+      />
+
+      <!-- Skills list -->
+      <p>Санал болгох</p>
+      <section id="skillsList">
+        <div class="skillInputItem inputButton activeItem">
+          <button type="button">
+            <span class="selectionButtonText">Quantitive Research</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">HTML</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">Eyetracking</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">Wordpress</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">A/B Testing</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">Negotiation</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">CSS</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">Conflict resolution</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="skillInputItem inputButton">
+          <button type="button">
+            <span class="selectionButtonText">Mentoring</span>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./work_history.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./education.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

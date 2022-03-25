@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Сертификатууд</h1>
+      <p>
+        Ур чадвараа дээшлүүлж сурсан курс сертификат байвал оруулаарай. Жишээ
+        нь: aws certifications, хэлний оноо гэх мэт
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main id="certificate">
+      <!-- Сертификат нэмэх товч -->
+      <div class="buttonSecondary">
+        <button type="button">
+          <span><i class="fa-solid fa-circle-plus"></i></span>
+          Нэмэх
+        </button>
+      </div>
+
+      <!-- Сертификат нэмэх / мэдээлэл оруулах -->
+
+      <section id="certificationInput">
+        <section id="courseName" class="longInput">
+          <p>Сертификат / Курсын Нэр</p>
+          <input type="text" placeholder="Сертификат / Курсын нэр" />
+        </section>
+        <section id="courseProvider" class="longInput">
+          <p>Сургууль/ Олгосон газар</p>
+          <input type="text" placeholder="Сургууль/ Олгосон газарын нэр" />
+        </section>
+
+        <!-- Сертификат авсан он -->
+        <div id="certificateDateInfo" class="selectionWrapper">
+          <section>
+            <label for="enrollmentDate">Элссэн</label>
+            <select id="enrollmentDate" name="receiveDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+          <section>
+            <label for="graduateDate">Төгссөн</label>
+            <select id="graduateDate" name="graduateDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+
+          <!-- Хадгалах товч -->
+          <button type="button" class="saveButton primaryButton">
+            <i class="fa-solid fa-check"
+              ><span class="saveButtonText">Хадгалах</span></i
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./education.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./social_links.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

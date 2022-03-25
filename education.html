@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Боловсрол</h1>
+      <p>
+        Төгссөн эсвэл сурч байгаа их дээд сургууль, боловсролын түвшингийн хамт
+        оруулна.
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main id="education">
+      <!-- Хадгалсан / Оруулсан боловсорлын мэдээлэл энд байна -->
+      <section>
+        <article>
+          <h2>Computer Science</h2>
+          <p>Суралцсан он: <span>2018-2022</span></p>
+        </article>
+        <div class="penBtnWrapper">
+          <!-- Click хийх үед тухайн мэдээллийг дахин засах / expand хийгдэнэ -->
+          <button type="button" class="primaryButton">
+            <p>Bachelor</p>
+          </button>
+          <button type="button" class="greyButton">
+            <span><i class="fa-solid fa-pen"></i></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Боловсрол нэмэх товч -->
+      <div class="buttonSecondary">
+        <button type="button">
+          <span><i class="fa-solid fa-circle-plus"></i></span>
+          Нэмэх
+        </button>
+      </div>
+
+      <!-- Боловсрол нэмэх / мэдээлэл оруулах  -->
+
+      <section id="educationInputs">
+        <section id="proffesion" class="longInput">
+          <p>Мэргэжил</p>
+          <input type="text" placeholder="Мэргжилийн нэр" />
+        </section>
+        <section id="school" class="longInput">
+          <p>Сургууль</p>
+          <input type="text" placeholder="Сургуулийн нэр" />
+        </section>
+        <section id="educationLevel" class="longInput">
+          <label for="levels">Зэрэг</label>
+          <select id="levels" name="education level">
+            <option value="" disabled selected>Сонгох</option>
+            <option value="Complete secondary">Complete secondary</option>
+            <option value="Associate">Associate</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+            <option value="Doctor">Doctor</option>
+          </select>
+        </section>
+
+        <!-- Одоо сурч байгаа эсэх checkbox -->
+        <div id="currentEducationState" class="checkboxInput">
+          <input type="checkbox" id="educationState" name="educationState" />
+          <label for="educationState">Сурч байгаа</label><br />
+        </div>
+
+        <!-- Ажилд орсон, гарсан он -->
+        <div id="educationDateInfo" class="selectionWrapper">
+          <section>
+            <label for="enrolledDate">Элссэн</label>
+            <select id="enrolledDate" name="enrolledDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+          <section>
+            <label for="gradDate">Төгссөн</label>
+            <select id="gradDate" name="gradDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+
+          <!-- Сургуулийн талаар дэлэгрэнгүй -->
+          <section id="moreAboutSchool">
+            <p>Дэлгэрэнгүй ( Заавал биш )</p>
+            <textarea
+              name="moreAboutWork"
+              id="moreAboutWork"
+              cols="50"
+              rows="20"
+              placeholder="Суралцаж байх хугацаандаа гаргасан амжилт сайн дурын ажил зэргийн талаар дэлгэрэнгүй бичээрэй. "
+            ></textarea>
+          </section>
+
+          <!-- Хадгалах товч -->
+          <button type="button" class="saveButton primaryButton">
+            <i class="fa-solid fa-check"
+              ><span class="saveButtonText">Хадгалах</span></i
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./skill.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./certificate.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

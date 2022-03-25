@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Ажлын түүх</h1>
+      <p>
+        Ажиллах хугацаандаа гүйцэтгэсэн үүрэг, ашигласан технологи, tool
+        аргачлал, хүрсэн үр дүнгээ бичээрэй.
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main id="workHistory">
+      <!-- Хадгалсан / Оруулсан ажлын түүхийн мэдээлэл энд байна -->
+      <section id="workHistoryList">
+        <article>
+          <h2>Junior Front End Developer</h2>
+          <p>Компани: <span>Erxes Inc</span></p>
+        </article>
+        <button type="button" class="greyButton">
+          <span><i class="fa-solid fa-pen"></i></span>
+        </button>
+      </section>
+
+      <!-- Ажлын түүх нэмэх товч   -->
+      <div class="buttonSecondary">
+        <button type="button">
+          <span><i class="fa-solid fa-circle-plus"></i></span>
+          Нэмэх
+        </button>
+      </div>
+
+      <!-- Нэмэх дарсан үед доорхи хэсэг гарч ирнэ -->
+      <section id="workHistoryInputs">
+        <section id="workPosition" class="longInput">
+          <p>Албан тушаал</p>
+          <input type="text" placeholder="Албан тушаалын нэр" />
+        </section>
+        <section id="companyName" class="longInput">
+          <p>Компани</p>
+          <input type="text" placeholder="Компани нэр" />
+        </section>
+
+        <!-- Одоо ажилж байгаа эсэх checkbox -->
+        <div id="currentEmploymentState" class="checkboxInput">
+          <input
+            type="checkbox"
+            id="emplpoymentState"
+            name="emplpoymentState"
+          />
+          <label for="emplpoymentState"> Одоо ажилж байгаа</label><br />
+        </div>
+
+        <!-- Ажилд орсон, гарсан он -->
+        <div id="emloymentDateInfo" class="selectionWrapper">
+          <section>
+            <label for="emloymentDate">Ажилд орсон</label>
+            <select id="emloymentDate" name="emloymentDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+          <section>
+            <label for="unEmloymentDate">Ажилаас гарсан</label>
+            <select id="unEmloymentDate" name="unEmloymentDate">
+              <option value="" disabled selected>Он сонгох</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </section>
+        </div>
+
+        <!-- Ажлын талаар дэлэгрэнгүй -->
+        <section id="moreAboutWork">
+          <p>Дэлгэрэнгүй ( Заавал биш )</p>
+          <textarea
+            name="moreAboutWork"
+            id="moreAboutWorkValue"
+            cols="50"
+            rows="20"
+            placeholder="Хүний нөөцийн менежерүүд энэ хэсэгт чухал ач холбогдол өгдөг тул ажиллах хугацаандаа гүйцэтгэсэн үүрэг, ашигласан технологи, tool аргачлал, хүрсэн үр дүн, гаргасан амжилтаа дэлгэрэнгүй бичээрэй. "
+          ></textarea>
+        </section>
+        <button type="button" class="saveButton primaryButton">
+          <i class="fa-solid fa-check"
+            ><span class="saveButtonText">Хадгалах</span></i
+          >
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./experience.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./skill.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ff3c400c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nito</title>
+  </head>
+
+  <!-- Card дээр дархад expand хийх css -->
+  <style>
+    .active {
+      height: 250px;
+    }
+    .activeQuestionBtn {
+      background-color: aquamarine;
+      border-radius: 50%;
+      border: none;
+    }
+  </style>
+
+  <!-- Sidebar бичих template script -->
+  <script type="module" src="/template.js"></script>
+
+  <body>
+    <!-- Sidebar render -->
+    <aside>
+      <my-aside></my-aside>
+    </aside>
+
+    <!-- Header Text -->
+    <header>
+      <h1>Мэргэжил, мэргэшил</h1>
+      <p>
+        Ажлын чиглэлээ туршлагын хамт оруулна. Жишээ нь: Front-end ээр мэргэшсэн
+        Software Engineer.
+      </p>
+    </header>
+
+    <!-- Main section -->
+    <main id="experience">
+      <!-- Хадгалсан / Оруулсан туршлагын мэдээлэл энд байна -->
+      <section>
+        <article>
+          <h2>Software / Hardware</h2>
+          <p>Нийт туршлага: <span>Төгсөх курс</span></p>
+        </article>
+        <div class="penBtnWrapper">
+          <!-- Click хийх үед тухайн мэдээллийг дахин засах / expand хийгдэнэ -->
+          <button type="button" class="primaryButton">
+            <p>
+              Front End Engineer - 4 жил
+              <span><i class="fa-solid fa-circle-plus"></i></span>
+            </p>
+          </button>
+          <button type="button" class="greyButton">
+            <span><i class="fa-solid fa-pen"></i></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Туршлага / Мэрэгжил нэмэх товч -->
+      <div class="button">
+        <button type="button">
+          <span><i class="fa-solid fa-circle-plus"></i></span>
+          Нэмэх
+        </button>
+      </div>
+
+      <!-- Нэмэх дарах үед мэдээлэл авах хэсэг -->
+
+      <div class="experienceNavigator">
+        <p class="activeNavigator">1</p>
+        <hr />
+        <p class="activeNavigator">Чиглэл</p>
+        <p>2</p>
+        <p>Мэргэшил</p>
+      </div>
+
+      <!-- Үндсэн мэдээлэл оруулах хэсэг -->
+      <div id="experienceInfoWrapper">
+        <h2>Чиглэл</h2>
+
+        <div class="experienceItems">
+          <section class="experienceItem">
+            <img src="./images/laptop.png" alt="software_hardware" />
+            <article class="experienceTitle">
+              <h2>Software / Hardware</h2>
+              <p>Frontend Engineer, QA Engineer, Game Developer</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/backpack.png" alt="internship" />
+            <article class="experienceTitle">
+              <h2>Inernship</h2>
+              <p>Work experience</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/management.png" alt="management" />
+            <article class="experienceTitle">
+              <h2>Management</h2>
+              <p>CTO, CIO, CFO</p>
+            </article>
+            <button type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/design.png" alt="design" />
+            <article class="experienceTitle">
+              <h2>Design</h2>
+              <p>Product Designer, UX Designer, UX Researcher</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/information_technology.png" alt="IT" />
+            <article class="experienceTitle">
+              <h2>Information Technology (IT)</h2>
+              <p>DevOps, Solutions Architect, Security Specialist</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/data.png" alt="Data" />
+            <article class="experienceTitle">
+              <h2>Data</h2>
+              <p>Data Analyst, Data Scientist, Data Egnineer</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images/hr_admin.png" alt="HR Admin" />
+            <article class="experienceTitle">
+              <h2>HR Admin</h2>
+              <p>HR Management, Secretary, Office Assistant</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images//sales_marketing.png" alt="Sales Marketing" />
+            <article class="experienceTitle">
+              <h2>Sales Marketing</h2>
+              <p>Marketing Specialist, Social Media Marketing, Sales Manager</p>
+            </article>
+            <button type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img src="./images//finance.png" alt="Finance" />
+            <article class="experienceTitle">
+              <h2>Finance</h2>
+              <p>Financial Planning/Analysis, Accountant, Risk Management</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+          <section class="experienceItem">
+            <img
+              src="./images/business_development_legal.png"
+              alt="Business Development"
+            />
+            <article class="experienceTitle">
+              <h2>Business Development / Legal</h2>
+              <p>Business Development, Investor Relation, Lawyer</p>
+            </article>
+            <button class="questionIcon" type="button">?</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+      <button type="button" class="lightButton">
+        <a href="./basics.html">Өмнөх</a>
+      </button>
+      <div class="footerButtonWrapper">
+        <button type="button" class="greyButton">
+          <a href="./cv.html">Хадгалаад гарах</a>
+        </button>
+        <button type="button" class="primaryButton">
+          <a href="./work_history.html">Дараах</a>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Card хэсэгт дархад expand хийх script -->
+    <script src="/main.js"></script>
+  </body>
+</html>
